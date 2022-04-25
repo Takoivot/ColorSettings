@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var mainColorView: UIView!
+    
+    @IBOutlet var redSlider: UIView!
+    @IBOutlet var greenSlider: UIView!
+    @IBOutlet var blueSlider: UIView!
+    
+    @IBOutlet var lableOfRedSlider: UIView!
+    @IBOutlet var lableOfGreenSlider: UIView!
+    @IBOutlet var lableOfBlueColor: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        mainColorView.layer.cornerRadius = 20
     }
 
 
+    @IBAction func changeAlphaRedColor() {
+    }
+    @IBAction func changeAlphaGreenColor() {
+    }
+    @IBAction func changeAlphaBlueColor() {
+    }
 }
 
