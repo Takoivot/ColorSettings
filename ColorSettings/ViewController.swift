@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         )
 }
     func changeValue(){
-        //redValue.text = String(redSlider.value)
-        //greenValue.text = String(greenSlider.value)
-        //blueValue.text = String(blueSlider.value)
+        redValue.text = String(format: "%0.2f", redSlider.value)
+        greenValue.text = String(format: "%0.2f", greenSlider.value)
+        blueValue.text = String(format: "%0.2f", blueSlider.value)
 
     }
     
