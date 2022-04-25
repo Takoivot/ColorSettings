@@ -22,62 +22,86 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7Y-SO-diB">
-                                <rect key="frame" x="16" y="297" width="89" height="21"/>
+                                <rect key="frame" x="16" y="297" width="37" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BQd-F2-Lqh">
-                                <rect key="frame" x="111" y="297" width="289" height="31"/>
+                                <rect key="frame" x="127" y="297" width="273" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <connections>
-                                    <action selector="changeAlphaRedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="NLo-Od-0Hb"/>
+                                    <action selector="rgbChangeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="hxC-6i-SJ3"/>
+                                    <action selector="rgbChangeValue" destination="BYZ-38-t0r" eventType="valueChanged" id="p5y-7J-nF6"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKN-ho-OD8">
-                                <rect key="frame" x="16" y="360" width="89" height="20.5"/>
+                                <rect key="frame" x="16" y="360" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kBH-Va-3O9">
-                                <rect key="frame" x="111" y="355.5" width="289" height="30.5"/>
+                                <rect key="frame" x="127" y="356" width="273" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <connections>
-                                    <action selector="changeAlphaGreenColor" destination="BYZ-38-t0r" eventType="valueChanged" id="x9p-Hr-tGm"/>
+                                    <action selector="rgbChangeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="FnP-BJ-kzd"/>
+                                    <action selector="rgbChangeValue" destination="BYZ-38-t0r" eventType="valueChanged" id="ora-Rh-TLP"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-zY-mSO">
-                                <rect key="frame" x="16" y="419.5" width="89" height="21"/>
+                                <rect key="frame" x="16" y="420" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="So8-k4-Yii">
-                                <rect key="frame" x="111" y="415" width="289" height="31"/>
+                                <rect key="frame" x="127" y="415" width="273" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                 <connections>
-                                    <action selector="changeAlphaBlueColor" destination="BYZ-38-t0r" eventType="valueChanged" id="8ta-mj-vwQ"/>
+                                    <action selector="rgbChangeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="BXq-O9-gMr"/>
+                                    <action selector="rgbChangeValue" destination="BYZ-38-t0r" eventType="valueChanged" id="llJ-b0-0oV"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUX-bG-xdU">
+                                <rect key="frame" x="69" y="297" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ac-Df-jTT">
+                                <rect key="frame" x="69" y="360" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-lX-qTv">
+                                <rect key="frame" x="69" y="419" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
                     <connections>
-                        <outlet property="blueSlider" destination="8bC-Xf-vdC" id="7W6-Wr-Cdq"/>
-                        <outlet property="greenSlider" destination="8bC-Xf-vdC" id="6gs-1k-uSZ"/>
-                        <outlet property="lableOfBlueColor" destination="wQY-zY-mSO" id="caW-lq-wjN"/>
-                        <outlet property="lableOfGreenSlider" destination="8bC-Xf-vdC" id="iu8-ne-IZB"/>
-                        <outlet property="lableOfRedSlider" destination="8bC-Xf-vdC" id="r1K-Kk-Tbt"/>
-                        <outlet property="mainColorView" destination="8bC-Xf-vdC" id="3py-EI-Jvk"/>
-                        <outlet property="redSlider" destination="8bC-Xf-vdC" id="v0Q-YK-Hfp"/>
+                        <outlet property="blueSlider" destination="So8-k4-Yii" id="gQC-Bv-LMb"/>
+                        <outlet property="blueValue" destination="8N3-lX-qTv" id="Fcs-yD-VE9"/>
+                        <outlet property="greenSlider" destination="kBH-Va-3O9" id="8Yj-xp-g4n"/>
+                        <outlet property="greenValue" destination="3Ac-Df-jTT" id="9zQ-z2-sg7"/>
+                        <outlet property="mainView" destination="9CG-03-zmj" id="EAw-id-woT"/>
+                        <outlet property="redSlider" destination="BQd-F2-Lqh" id="zPk-CT-45L"/>
+                        <outlet property="redValue" destination="wUX-bG-xdU" id="FDC-Pa-YHb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

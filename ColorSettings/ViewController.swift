@@ -10,28 +10,41 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet var mainColorView: UIView!
+    @IBOutlet var mainView: UIView!
     
-    @IBOutlet var redSlider: UIView!
-    @IBOutlet var greenSlider: UIView!
-    @IBOutlet var blueSlider: UIView!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
     
-    @IBOutlet var lableOfRedSlider: UIView!
-    @IBOutlet var lableOfGreenSlider: UIView!
-    @IBOutlet var lableOfBlueColor: UILabel!
+    @IBOutlet var redValue: UILabel!
+    @IBOutlet var greenValue: UILabel!
+    @IBOutlet var blueValue: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        mainColorView.layer.cornerRadius = 20
-    }
+        mainView.layer.cornerRadius = 30
+}
 
+    func changeColor(){
+        mainView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+}
+    func changeValue(){
+        //redValue.text = String(redSlider.value)
+        //greenValue.text = String(greenSlider.value)
+        //blueValue.text = String(blueSlider.value)
 
-    @IBAction func changeAlphaRedColor() {
     }
-    @IBAction func changeAlphaGreenColor() {
+    
+    @IBAction func rgbChangeColor(){
+        changeColor()
     }
-    @IBAction func changeAlphaBlueColor() {
+    @IBAction func rgbChangeValue(){
+        changeValue()
     }
 }
 
