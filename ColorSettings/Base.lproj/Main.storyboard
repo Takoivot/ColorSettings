@@ -11,7 +11,7 @@
         <!--Start Color Settings View Controller-->
         <scene sceneID="LVe-gn-kLA">
             <objects>
-                <viewController id="MNa-8s-JCz" customClass="StartColorSettingsViewController" customModule="ColorSettings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MNa-8s-JCz" customClass="StartColorSettingsViewController" customModule="NewColorSettings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugF-Wa-yKH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
         <!--Settings Color View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SettingsColorViewController" customModule="ColorSettings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SettingsColorViewController" customModule="NewColorSettings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
